@@ -14,7 +14,11 @@
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     },
-    { "matchUpdateTypes": ["minor", "patch"], "automerge": true },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "allowedVersions": "!/-canary/",
+      "automerge": true
+    },
     { "depTypeList": ["peerDependencies"], "enabled": false }
   ]
 }
