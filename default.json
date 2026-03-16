@@ -9,6 +9,11 @@
   "timezone": "Asia/Shanghai",
   "rangeStrategy": "bump",
   "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
     { "matchUpdateTypes": ["minor", "patch"], "automerge": true },
     { "depTypeList": ["peerDependencies"], "enabled": false }
   ]
