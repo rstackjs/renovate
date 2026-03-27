@@ -11,14 +11,14 @@
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["minor", "patch"],
-      "allowedVersions": "!/-canary/",
-      "automerge": true
+      "matchPackageNames": ["@rsbuild/core"],
+      "allowedVersions": "!/-canary/"
     },
+    { "matchUpdateTypes": ["minor", "patch"], "automerge": true },
     { "depTypeList": ["peerDependencies"], "enabled": false }
   ]
 }
