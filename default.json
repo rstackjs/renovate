@@ -15,7 +15,12 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["@rsbuild/core"],
+      "matchPackageNames": [
+        "@rspack/core",
+        "@rspack/cli",
+        "@rspack/browser",
+        "@rsbuild/core"
+      ],
       "allowedVersions": "!/-canary/"
     },
     { "matchUpdateTypes": ["minor", "patch"], "automerge": true },
