@@ -11,6 +11,19 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "description": "Disable minimum release age checks for Rstack packages",
+      "matchPackageNames": [
+        "@rspack/*",
+        "@rsbuild/*",
+        "@rslib/*",
+        "@rspress/*",
+        "@rstest/*",
+        "@rsdoctor/*",
+        "@rslint/*"
+      ],
+      "minimumReleaseAge": null
+    },
+    {
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
       "automerge": true
