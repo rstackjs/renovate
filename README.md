@@ -17,7 +17,7 @@ The default preset includes the security preset.
 
 ### Security preset
 
-Use the security preset on its own to enable minimum release age checks:
+Use the security preset on its own to enable minimum release age checks and GitHub Actions digest pinning:
 
 ```json
 {

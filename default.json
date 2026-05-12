@@ -4,7 +4,6 @@
     "config:base",
     "schedule:weekly",
     "group:allNonMajor",
-    "helpers:pinGitHubActionDigests",
     "github>rstackjs/renovate:security"
   ],
   "timezone": "Asia/Shanghai",
