@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "minimumReleaseAge": "1 day",
+  "packageRules": [
+    {
+      "description": "Disable minimum release age checks for Rstack packages",
+      "matchPackageNames": [
+        "@rspack/*",
+        "@rsbuild/*",
+        "@rslib/*",
+        "@rspress/*",
+        "@rstest/*",
+        "@rsdoctor/*",
+        "@rslint/*"
+      ],
+      "minimumReleaseAge": null
+    }
+  ]
+}

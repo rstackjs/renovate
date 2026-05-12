@@ -4,25 +4,12 @@
     "config:base",
     "schedule:weekly",
     "group:allNonMajor",
-    "helpers:pinGitHubActionDigests"
+    "helpers:pinGitHubActionDigests",
+    "github>rstackjs/renovate:security"
   ],
   "timezone": "Asia/Shanghai",
-  "minimumReleaseAge": "1 day",
   "rangeStrategy": "bump",
   "packageRules": [
-    {
-      "description": "Disable minimum release age checks for Rstack packages",
-      "matchPackageNames": [
-        "@rspack/*",
-        "@rsbuild/*",
-        "@rslib/*",
-        "@rspress/*",
-        "@rstest/*",
-        "@rsdoctor/*",
-        "@rslint/*"
-      ],
-      "minimumReleaseAge": null
-    },
     {
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
