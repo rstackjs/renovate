@@ -24,6 +24,12 @@
       "allowedVersions": "!/-canary/"
     },
     { "matchUpdateTypes": ["minor", "patch"], "automerge": true },
+    {
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["engines"],
+      "matchPackageNames": ["node"],
+      "enabled": false
+    },
     { "depTypeList": ["peerDependencies"], "enabled": false }
   ]
 }
