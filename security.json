@@ -4,6 +4,11 @@
   "minimumReleaseAge": "1 day",
   "packageRules": [
     {
+      "description": "Delay GitHub Actions updates for supply chain security",
+      "matchManagers": ["github-actions"],
+      "minimumReleaseAge": "7 days"
+    },
+    {
       "description": "Disable minimum release age checks for Rstack packages",
       "matchPackageNames": [
         "@rspack/*",
