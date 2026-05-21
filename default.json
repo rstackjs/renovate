@@ -6,6 +6,7 @@
     "group:allNonMajor",
     "github>rstackjs/renovate:security"
   ],
+  "ignorePaths": ["**/node_modules/**"],
   "timezone": "Asia/Shanghai",
   "rangeStrategy": "bump",
   "packageRules": [
