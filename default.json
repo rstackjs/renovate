@@ -31,6 +31,6 @@
       "matchPackageNames": ["node"],
       "enabled": false
     },
-    { "depTypeList": ["peerDependencies"], "enabled": false }
+    { "matchDepTypes": ["peerDependencies"], "enabled": false }
   ]
 }
