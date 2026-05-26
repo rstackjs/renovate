@@ -4,7 +4,9 @@
     "config:recommended",
     "schedule:weekly",
     "group:allNonMajor",
-    "github>rstackjs/renovate:security"
+    "github>rstackjs/renovate:security",
+    "github>rstackjs/renovate:disableNodeEngines",
+    "github>rstackjs/renovate:disablePeerDependencies"
   ],
   "ignorePaths": ["**/node_modules/**"],
   "timezone": "Asia/Shanghai",
@@ -24,13 +26,6 @@
       ],
       "allowedVersions": "!/-canary/"
     },
-    { "matchUpdateTypes": ["minor", "patch"], "automerge": true },
-    {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["engines"],
-      "matchPackageNames": ["node"],
-      "enabled": false
-    },
-    { "matchDepTypes": ["peerDependencies"], "enabled": false }
+    { "matchUpdateTypes": ["minor", "patch"], "automerge": true }
   ]
 }

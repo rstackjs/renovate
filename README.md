@@ -13,7 +13,7 @@ Shared Renovate config for Rstack projects.
 }
 ```
 
-The default preset includes the security preset.
+The default preset includes the security, disableNodeEngines, and disablePeerDependencies presets.
 
 ### Security preset
 
@@ -21,7 +21,26 @@ Use the security preset on its own to enable minimum release age checks and GitH
 
 ```json
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>rstackjs/renovate:security"]
+}
+```
+
+### Disable Node engines preset
+
+Use this preset to disable Node.js engine updates from npm:
+
+```json
+{
+  "extends": ["github>rstackjs/renovate:disableNodeEngines"]
+}
+```
+
+### Disable peer dependencies preset
+
+Use this preset to disable peer dependency updates:
+
+```json
+{
+  "extends": ["github>rstackjs/renovate:disablePeerDependencies"]
 }
 ```
