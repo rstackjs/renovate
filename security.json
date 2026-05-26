@@ -17,7 +17,9 @@
         "@rspress/*",
         "@rstest/*",
         "@rsdoctor/*",
-        "@rslint/*"
+        "@rslint/*",
+        "@swc/*",
+        "rsbuild-plugin-*"
       ],
       "minimumReleaseAge": null
     }
