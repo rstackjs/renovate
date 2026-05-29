@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    "schedule:weekly",
     "group:allNonMajor",
     "github>rstackjs/renovate:security",
     "github>rstackjs/renovate:disableNodeEngines",
@@ -10,6 +9,7 @@
   ],
   "ignorePaths": ["**/node_modules/**"],
   "timezone": "Asia/Shanghai",
+  "schedule": ["* 0-3 1,15 * *"],
   "rangeStrategy": "bump",
   "packageRules": [
     {
