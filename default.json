@@ -13,6 +13,15 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "matchManagers": ["nodenv"],
+      "rangeStrategy": "replace"
+    },
+    {
+      "matchManagers": ["nodenv"],
+      "matchUpdateTypes": ["minor", "patch", "pin"],
+      "enabled": false
+    },
+    {
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
       "automerge": true
